@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>extreload helper</title>
+<style>
+  body { font: 14px system-ui, -apple-system, sans-serif; margin: 24px; max-width: 480px; color: #1f2937; }
+  label { display: block; margin: 16px 0 4px; font-weight: 600; }
+  input { width: 100%; box-sizing: border-box; padding: 6px 8px; font: inherit; }
+  p { color: #6b7280; margin: 4px 0; }
+  button { margin-top: 16px; padding: 6px 14px; font: inherit; }
+  #saved { margin-left: 8px; color: #059669; }
+</style>
+</head>
+<body>
+<h1>extreload helper</h1>
+<label for="label">This Chrome's label</label>
+<input id="label" placeholder="e.g. work">
+<p>So <code>extreload reload --profile work</code> reaches only this one, when several Chromes have the helper.</p>
+<label for="port">Port</label>
+<input id="port" placeholder="7988">
+<p>The port <code>extreload serve</code> listens on ($EXTRELOAD_PORT).</p>
+<button id="save">Save</button><span id="saved"></span>
+<script src="options.js"></script>
+</body>
+</html>
